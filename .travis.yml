@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t mannydesigns/node .
-  - docker images mannydesigns/node
+  - docker build -t amatya12/node .
+  - docker images amatya12/node
 
 before_deploy:
   - docker login -u "amatya12" -p "9813445566!"
 
 deploy:
   provider: script
-  script: docker push mannydesigns/node
+  script: docker push amatya12/node
   on:
     branch: master
