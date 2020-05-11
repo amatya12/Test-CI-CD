@@ -7,7 +7,7 @@ script:
   - docker images mannydesigns/node
 
 before_deploy:
-  - docker login -u amatya12 -p 9813445566!
+  - docker login -u "amatya12" -p "9813445566!"
 
 deploy:
   provider: script
